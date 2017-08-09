@@ -146,6 +146,8 @@ void BackupCtrFs(void)
     
     recursiveCopyCtrFs("/ro/sys/HWCAL0.dat");
     recursiveCopyCtrFs("/ro/sys/HWCAL1.dat");
+    recursiveCopyCtrFs("/data");
+    recursiveCopyCtrFs("/dbs");
     
     printf("Everything copied to %s on the SD card!\n", backupPath);
     free(backupPath);
